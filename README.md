@@ -51,9 +51,10 @@ if you want to separate to difference Firebase for development and production so
               FirebaseApp.configure(options: options)
           }
     }
-    ```
-    
+```
+
 Example for Config 2 difference Firebase.
+
 
 ```sh
      private func setupFirebaseApp() {
@@ -95,12 +96,14 @@ func FirebaseReference(_ collectionReference: FCollectionReference) -> Collectio
     
     return Firestore.firestore().collection(collectionReference.rawValue)
 } 
-  ```
+```
+  
 How to use :
 
-  ```sh
+
+```sh
 FirebaseReference(.Common).document(objectId).delete() { error in }
-  ```
+```
 
 #### CommonFormView.swift
 You can use ShareFormPreviewView and ShareFormToolView for all CMS in your project but you need to binding variables to both views if you have more fields.
@@ -138,6 +141,7 @@ Manage upload/download images from Firestore.
 
 ### Folder CostomImage and CostomCamera
 `CostomImage` is the library for Image Picker.
+
 `CostomCamera` is the library for Take photo.
 
 
