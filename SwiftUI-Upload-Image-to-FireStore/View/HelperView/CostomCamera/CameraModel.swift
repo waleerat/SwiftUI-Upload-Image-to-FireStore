@@ -89,21 +89,19 @@ class CameraModel: NSObject,ObservableObject,AVCapturePhotoCaptureDelegate{
     
     // take and retake functions...
     
-    func takePic(){
-        print(">> takePic")
+    func takePic(){ 
         self.output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
         
         DispatchQueue.global(qos: .background).async {
             self.session.stopRunning()
             DispatchQueue.main.async {
-                print(">> takePic c")
+                print(">> Success takePic")
                 withAnimation{self.isTaken.toggle()}
             }
         }
     }
     
     func reTake(){
-        print(">> reTake")
         DispatchQueue.global(qos: .background).async {
             
             self.session.startRunning()
