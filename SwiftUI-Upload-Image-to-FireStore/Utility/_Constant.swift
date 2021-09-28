@@ -8,10 +8,13 @@
 
 import SwiftUI
 /*
-public let kFileRefference = "FireStore Refference URL"
-public let kFileStoreRootDirectory = "Eample-Project/"
+public let kFileRefference = ""
+public let kFileStoreRootDirectory = "Example-Project/"
 public let kUserDefault = UserDefaults.standard
 public let kScreenBackground = "bg"
-*/
- 
+
+
+public let  kPlaceholderTitle = "Title"
+public let  kPlaceholderDescription = "Description"
+ */
 
