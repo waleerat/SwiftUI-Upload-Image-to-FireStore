@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB94FEE027032D6D00C44E5D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB94FEDF27032D6D00C44E5D /* Extension.swift */; };
+		AB94FEE227032F2200C44E5D /* AskForPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB94FEE127032F2200C44E5D /* AskForPermission.swift */; };
+		AB94FEE52703329100C44E5D /* CommonIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB94FEE42703329100C44E5D /* CommonIndexView.swift */; };
+		AB94FEE72703412F00C44E5D /* ToggelSwitchOnOff.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB94FEE62703412F00C44E5D /* ToggelSwitchOnOff.swift */; };
+		AB94FEE92703455A00C44E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB94FEE82703455A00C44E5D /* GoogleService-Info.plist */; };
+		AB94FEEB270369EE00C44E5D /* _Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB94FEEA270369EE00C44E5D /* _Constant.swift */; };
+		AB9CA72E270317C200DCE07D /* SwiftUI_Upload_Image_to_FireStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA72D270317C200DCE07D /* SwiftUI_Upload_Image_to_FireStoreApp.swift */; };
+		AB9CA730270317C200DCE07D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA72F270317C200DCE07D /* ContentView.swift */; };
+		AB9CA732270317C700DCE07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9CA731270317C700DCE07D /* Assets.xcassets */; };
+		AB9CA735270317C700DCE07D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9CA734270317C700DCE07D /* Preview Assets.xcassets */; };
+		AB9CA7512703187700DCE07D /* ShareFormToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA73C2703187600DCE07D /* ShareFormToolView.swift */; };
+		AB9CA7522703187700DCE07D /* LibraryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA73D2703187600DCE07D /* LibraryStatus.swift */; };
+		AB9CA7532703187700DCE07D /* ShareFormPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA73E2703187600DCE07D /* ShareFormPreviewView.swift */; };
+		AB9CA7542703187700DCE07D /* ButtonTextAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA73F2703187600DCE07D /* ButtonTextAction.swift */; };
+		AB9CA7552703187700DCE07D /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7402703187600DCE07D /* FCollectionReference.swift */; };
+		AB9CA7562703187700DCE07D /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7412703187600DCE07D /* Asset.swift */; };
+		AB9CA7582703187700DCE07D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7432703187600DCE07D /* CameraView.swift */; };
+		AB9CA7592703187700DCE07D /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7442703187600DCE07D /* FileStorage.swift */; };
+		AB9CA75A2703187700DCE07D /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7452703187600DCE07D /* ImagePickerViewModel.swift */; };
+		AB9CA75B2703187700DCE07D /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7462703187600DCE07D /* BlankView.swift */; };
+		AB9CA75C2703187700DCE07D /* FileManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7472703187600DCE07D /* FileManagerVM.swift */; };
+		AB9CA75D2703187700DCE07D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7482703187600DCE07D /* ImagePicker.swift */; };
+		AB9CA75E2703187700DCE07D /* CommonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7492703187600DCE07D /* CommonFormView.swift */; };
+		AB9CA75F2703187700DCE07D /* ImagePickerTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA74A2703187600DCE07D /* ImagePickerTabBar.swift */; };
+		AB9CA7602703187700DCE07D /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA74B2703187700DCE07D /* CameraPreview.swift */; };
+		AB9CA7612703187700DCE07D /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA74C2703187700DCE07D /* CommonModel.swift */; };
+		AB9CA7622703187700DCE07D /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA74D2703187700DCE07D /* CameraModel.swift */; };
+		AB9CA7632703187700DCE07D /* CommonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA74E2703187700DCE07D /* CommonVM.swift */; };
+		AB9CA7642703187700DCE07D /* ShareFormUlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA74F2703187700DCE07D /* ShareFormUlities.swift */; };
+		AB9CA77127031C5E00DCE07D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA76F27031C5E00DCE07D /* Constants.swift */; };
+		AB9CA77227031C5E00DCE07D /* DeviceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA77027031C5E00DCE07D /* DeviceProperties.swift */; };
+		AB9CA7752703249600DCE07D /* CommonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7742703249600DCE07D /* CommonModifier.swift */; };
+		AB9CA7772703254500DCE07D /* ButtonWithIconWithClipShapeCircleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9CA7762703254400DCE07D /* ButtonWithIconWithClipShapeCircleAction.swift */; };
+		E86CD100CDE287914E947F37 /* Pods_SwiftUI_Upload_Image_to_FireStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9500727E9D075BE42BF3E084 /* Pods_SwiftUI_Upload_Image_to_FireStore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		270CB326858CC2EDB49E282C /* Pods-SwiftUI-Upload-Image-to-FireStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Upload-Image-to-FireStore.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Upload-Image-to-FireStore/Pods-SwiftUI-Upload-Image-to-FireStore.release.xcconfig"; sourceTree = "<group>"; };
+		9500727E9D075BE42BF3E084 /* Pods_SwiftUI_Upload_Image_to_FireStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Upload_Image_to_FireStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB94FEDF27032D6D00C44E5D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AB94FEE127032F2200C44E5D /* AskForPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskForPermission.swift; sourceTree = "<group>"; };
+		AB94FEE42703329100C44E5D /* CommonIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonIndexView.swift; sourceTree = "<group>"; };
+		AB94FEE62703412F00C44E5D /* ToggelSwitchOnOff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggelSwitchOnOff.swift; sourceTree = "<group>"; };
+		AB94FEE82703455A00C44E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB94FEEA270369EE00C44E5D /* _Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Constant.swift; sourceTree = "<group>"; };
+		AB9CA72A270317C200DCE07D /* SwiftUI-Upload-Image-to-FireStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Upload-Image-to-FireStore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9CA72D270317C200DCE07D /* SwiftUI_Upload_Image_to_FireStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Upload_Image_to_FireStoreApp.swift; sourceTree = "<group>"; };
+		AB9CA72F270317C200DCE07D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB9CA731270317C700DCE07D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB9CA734270317C700DCE07D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB9CA73C2703187600DCE07D /* ShareFormToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareFormToolView.swift; sourceTree = "<group>"; };
+		AB9CA73D2703187600DCE07D /* LibraryStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryStatus.swift; sourceTree = "<group>"; };
+		AB9CA73E2703187600DCE07D /* ShareFormPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareFormPreviewView.swift; sourceTree = "<group>"; };
+		AB9CA73F2703187600DCE07D /* ButtonTextAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTextAction.swift; sourceTree = "<group>"; };
+		AB9CA7402703187600DCE07D /* FCollectionReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		AB9CA7412703187600DCE07D /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		AB9CA7432703187600DCE07D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		AB9CA7442703187600DCE07D /* FileStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		AB9CA7452703187600DCE07D /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
+		AB9CA7462703187600DCE07D /* BlankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		AB9CA7472703187600DCE07D /* FileManagerVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerVM.swift; sourceTree = "<group>"; };
+		AB9CA7482703187600DCE07D /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		AB9CA7492703187600DCE07D /* CommonFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFormView.swift; sourceTree = "<group>"; };
+		AB9CA74A2703187600DCE07D /* ImagePickerTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerTabBar.swift; sourceTree = "<group>"; };
+		AB9CA74B2703187700DCE07D /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		AB9CA74C2703187700DCE07D /* CommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		AB9CA74D2703187700DCE07D /* CameraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		AB9CA74E2703187700DCE07D /* CommonVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonVM.swift; sourceTree = "<group>"; };
+		AB9CA74F2703187700DCE07D /* ShareFormUlities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareFormUlities.swift; sourceTree = "<group>"; };
+		AB9CA76F27031C5E00DCE07D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB9CA77027031C5E00DCE07D /* DeviceProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceProperties.swift; sourceTree = "<group>"; };
+		AB9CA7742703249600DCE07D /* CommonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModifier.swift; sourceTree = "<group>"; };
+		AB9CA7762703254400DCE07D /* ButtonWithIconWithClipShapeCircleAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithIconWithClipShapeCircleAction.swift; sourceTree = "<group>"; };
+		F6FE56997694DE0BF7411F0D /* Pods-SwiftUI-Upload-Image-to-FireStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Upload-Image-to-FireStore.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Upload-Image-to-FireStore/Pods-SwiftUI-Upload-Image-to-FireStore.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB9CA727270317C200DCE07D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86CD100CDE287914E947F37 /* Pods_SwiftUI_Upload_Image_to_FireStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94A1F676D9C92D60405DD34A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9500727E9D075BE42BF3E084 /* Pods_SwiftUI_Upload_Image_to_FireStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB94FEE32703327A00C44E5D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA7492703187600DCE07D /* CommonFormView.swift */,
+				AB94FEE42703329100C44E5D /* CommonIndexView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AB9CA721270317C200DCE07D = {
+			isa = PBXGroup;
+			children = (
+				AB9CA72C270317C200DCE07D /* SwiftUI-Upload-Image-to-FireStore */,
+				AB9CA72B270317C200DCE07D /* Products */,
+				ED1684B8A4AA8FFCB572A53A /* Pods */,
+				94A1F676D9C92D60405DD34A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9CA72B270317C200DCE07D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA72A270317C200DCE07D /* SwiftUI-Upload-Image-to-FireStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB9CA72C270317C200DCE07D /* SwiftUI-Upload-Image-to-FireStore */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA767270318F400DCE07D /* App */,
+				AB9CA7692703190700DCE07D /* Model */,
+				AB9CA768270318FE00DCE07D /* View */,
+				AB9CA72F270317C200DCE07D /* ContentView.swift */,
+				AB9CA76A2703191000DCE07D /* ViewModel */,
+				AB9CA77327031C6500DCE07D /* Utility */,
+				AB9CA733270317C700DCE07D /* Preview Content */,
+			);
+			path = "SwiftUI-Upload-Image-to-FireStore";
+			sourceTree = "<group>";
+		};
+		AB9CA733270317C700DCE07D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA734270317C700DCE07D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB9CA765270318A300DCE07D /* CostomImage */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA7412703187600DCE07D /* Asset.swift */,
+				AB9CA7482703187600DCE07D /* ImagePicker.swift */,
+				AB9CA74A2703187600DCE07D /* ImagePickerTabBar.swift */,
+				AB9CA7452703187600DCE07D /* ImagePickerViewModel.swift */,
+				AB9CA73D2703187600DCE07D /* LibraryStatus.swift */,
+			);
+			path = CostomImage;
+			sourceTree = "<group>";
+		};
+		AB9CA766270318B400DCE07D /* CostomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA74D2703187700DCE07D /* CameraModel.swift */,
+				AB9CA74B2703187700DCE07D /* CameraPreview.swift */,
+				AB9CA7432703187600DCE07D /* CameraView.swift */,
+			);
+			path = CostomCamera;
+			sourceTree = "<group>";
+		};
+		AB9CA767270318F400DCE07D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA72D270317C200DCE07D /* SwiftUI_Upload_Image_to_FireStoreApp.swift */,
+				AB94FEE82703455A00C44E5D /* GoogleService-Info.plist */,
+				AB9CA731270317C700DCE07D /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AB9CA768270318FE00DCE07D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB94FEE32703327A00C44E5D /* Common */,
+				AB9CA76E270319B500DCE07D /* HelperView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB9CA7692703190700DCE07D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA74C2703187700DCE07D /* CommonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB9CA76A2703191000DCE07D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA74E2703187700DCE07D /* CommonVM.swift */,
+				AB9CA7472703187600DCE07D /* FileManagerVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB9CA76B2703191F00DCE07D /* FirebaseListener */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA7402703187600DCE07D /* FCollectionReference.swift */,
+				AB9CA7442703187600DCE07D /* FileStorage.swift */,
+			);
+			path = FirebaseListener;
+			sourceTree = "<group>";
+		};
+		AB9CA76C2703193400DCE07D /* SharedForm */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA73E2703187600DCE07D /* ShareFormPreviewView.swift */,
+				AB9CA73C2703187600DCE07D /* ShareFormToolView.swift */,
+				AB9CA74F2703187700DCE07D /* ShareFormUlities.swift */,
+			);
+			path = SharedForm;
+			sourceTree = "<group>";
+		};
+		AB9CA76E270319B500DCE07D /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				AB94FEE62703412F00C44E5D /* ToggelSwitchOnOff.swift */,
+				AB9CA76C2703193400DCE07D /* SharedForm */,
+				AB9CA765270318A300DCE07D /* CostomImage */,
+				AB9CA766270318B400DCE07D /* CostomCamera */,
+				AB9CA7462703187600DCE07D /* BlankView.swift */,
+				AB9CA73F2703187600DCE07D /* ButtonTextAction.swift */,
+				AB9CA7762703254400DCE07D /* ButtonWithIconWithClipShapeCircleAction.swift */,
+				AB94FEE127032F2200C44E5D /* AskForPermission.swift */,
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
+		AB9CA77327031C6500DCE07D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CA76B2703191F00DCE07D /* FirebaseListener */,
+				AB9CA76F27031C5E00DCE07D /* Constants.swift */,
+				AB94FEEA270369EE00C44E5D /* _Constant.swift */,
+				AB9CA7742703249600DCE07D /* CommonModifier.swift */,
+				AB94FEDF27032D6D00C44E5D /* Extension.swift */,
+				AB9CA77027031C5E00DCE07D /* DeviceProperties.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		ED1684B8A4AA8FFCB572A53A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6FE56997694DE0BF7411F0D /* Pods-SwiftUI-Upload-Image-to-FireStore.debug.xcconfig */,
+				270CB326858CC2EDB49E282C /* Pods-SwiftUI-Upload-Image-to-FireStore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB9CA729270317C200DCE07D /* SwiftUI-Upload-Image-to-FireStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9CA738270317C700DCE07D /* Build configuration list for PBXNativeTarget "SwiftUI-Upload-Image-to-FireStore" */;
+			buildPhases = (
+				6AFB5B5177DF70D9D989B0CB /* [CP] Check Pods Manifest.lock */,
+				AB9CA726270317C200DCE07D /* Sources */,
+				AB9CA727270317C200DCE07D /* Frameworks */,
+				AB9CA728270317C200DCE07D /* Resources */,
+				6AF9386EE80D1CB1D30696FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-Upload-Image-to-FireStore";
+			productName = "SwiftUI-Upload-Image-to-FireStore";
+			productReference = AB9CA72A270317C200DCE07D /* SwiftUI-Upload-Image-to-FireStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB9CA722270317C200DCE07D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AB9CA729270317C200DCE07D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = AB9CA725270317C200DCE07D /* Build configuration list for PBXProject "SwiftUI-Upload-Image-to-FireStore" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB9CA721270317C200DCE07D;
+			productRefGroup = AB9CA72B270317C200DCE07D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB9CA729270317C200DCE07D /* SwiftUI-Upload-Image-to-FireStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9CA728270317C200DCE07D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9CA735270317C700DCE07D /* Preview Assets.xcassets in Resources */,
+				AB94FEE92703455A00C44E5D /* GoogleService-Info.plist in Resources */,
+				AB9CA732270317C700DCE07D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AF9386EE80D1CB1D30696FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Upload-Image-to-FireStore/Pods-SwiftUI-Upload-Image-to-FireStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Upload-Image-to-FireStore/Pods-SwiftUI-Upload-Image-to-FireStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Upload-Image-to-FireStore/Pods-SwiftUI-Upload-Image-to-FireStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AFB5B5177DF70D9D989B0CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUI-Upload-Image-to-FireStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB9CA726270317C200DCE07D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9CA77227031C5E00DCE07D /* DeviceProperties.swift in Sources */,
+				AB9CA7562703187700DCE07D /* Asset.swift in Sources */,
+				AB9CA7542703187700DCE07D /* ButtonTextAction.swift in Sources */,
+				AB9CA7612703187700DCE07D /* CommonModel.swift in Sources */,
+				AB94FEE52703329100C44E5D /* CommonIndexView.swift in Sources */,
+				AB9CA7522703187700DCE07D /* LibraryStatus.swift in Sources */,
+				AB9CA7592703187700DCE07D /* FileStorage.swift in Sources */,
+				AB9CA730270317C200DCE07D /* ContentView.swift in Sources */,
+				AB9CA75E2703187700DCE07D /* CommonFormView.swift in Sources */,
+				AB94FEE72703412F00C44E5D /* ToggelSwitchOnOff.swift in Sources */,
+				AB9CA7532703187700DCE07D /* ShareFormPreviewView.swift in Sources */,
+				AB94FEE027032D6D00C44E5D /* Extension.swift in Sources */,
+				AB9CA7772703254500DCE07D /* ButtonWithIconWithClipShapeCircleAction.swift in Sources */,
+				AB9CA7602703187700DCE07D /* CameraPreview.swift in Sources */,
+				AB94FEEB270369EE00C44E5D /* _Constant.swift in Sources */,
+				AB9CA7582703187700DCE07D /* CameraView.swift in Sources */,
+				AB94FEE227032F2200C44E5D /* AskForPermission.swift in Sources */,
+				AB9CA7632703187700DCE07D /* CommonVM.swift in Sources */,
+				AB9CA7642703187700DCE07D /* ShareFormUlities.swift in Sources */,
+				AB9CA75A2703187700DCE07D /* ImagePickerViewModel.swift in Sources */,
+				AB9CA75F2703187700DCE07D /* ImagePickerTabBar.swift in Sources */,
+				AB9CA75C2703187700DCE07D /* FileManagerVM.swift in Sources */,
+				AB9CA7512703187700DCE07D /* ShareFormToolView.swift in Sources */,
+				AB9CA7552703187700DCE07D /* FCollectionReference.swift in Sources */,
+				AB9CA75D2703187700DCE07D /* ImagePicker.swift in Sources */,
+				AB9CA72E270317C200DCE07D /* SwiftUI_Upload_Image_to_FireStoreApp.swift in Sources */,
+				AB9CA75B2703187700DCE07D /* BlankView.swift in Sources */,
+				AB9CA7622703187700DCE07D /* CameraModel.swift in Sources */,
+				AB9CA77127031C5E00DCE07D /* Constants.swift in Sources */,
+				AB9CA7752703249600DCE07D /* CommonModifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB9CA736270317C700DCE07D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB9CA737270317C700DCE07D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB9CA739270317C700DCE07D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6FE56997694DE0BF7411F0D /* Pods-SwiftUI-Upload-Image-to-FireStore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Upload-Image-to-FireStore/Preview Content\"";
+				DEVELOPMENT_TEAM = ZD74G4QNW2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requied to access to your Camera.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app requied to access to your Photo library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wgoweb.SwiftUI-Upload-Image-to-FireStore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB9CA73A270317C700DCE07D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270CB326858CC2EDB49E282C /* Pods-SwiftUI-Upload-Image-to-FireStore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Upload-Image-to-FireStore/Preview Content\"";
+				DEVELOPMENT_TEAM = ZD74G4QNW2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requied to access to your Camera.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app requied to access to your Photo library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wgoweb.SwiftUI-Upload-Image-to-FireStore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB9CA725270317C200DCE07D /* Build configuration list for PBXProject "SwiftUI-Upload-Image-to-FireStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9CA736270317C700DCE07D /* Debug */,
+				AB9CA737270317C700DCE07D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB9CA738270317C700DCE07D /* Build configuration list for PBXNativeTarget "SwiftUI-Upload-Image-to-FireStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9CA739270317C700DCE07D /* Debug */,
+				AB9CA73A270317C700DCE07D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB9CA722270317C200DCE07D /* Project object */;
+}
