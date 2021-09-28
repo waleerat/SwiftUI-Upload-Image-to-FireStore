@@ -39,7 +39,7 @@ struct CommonFormView: View {
                         }
                     })
                     
-                    Text("Common").modifier(TextBoldModifier(fontStyle: .header))
+                    Text("Sample").modifier(TextBoldModifier(fontStyle: .header))
                     
                     Spacer()
                     
@@ -85,7 +85,6 @@ struct CommonFormView: View {
                     title = currentRow.title
                     description = currentRow.description
                     imageURL = currentRow.imageURL
-                    print(">> \(objectId)")
                 } else {
                     objectId = UUID().uuidString
                 }
@@ -107,7 +106,10 @@ struct CommonFormView: View {
     // MARK: - HELPER FUNCTIONS
     func saveToFirebase(objectId: String){
         // Note: - Save to Firebase
-        let modelData = CommonModel(_id: objectId, _title: title, _description: description, _imageURL: imageURL) 
+        let modelData = CommonModel(_id: objectId,
+                                    _title: (title != kPlaceholderTitle) ? title : "",
+                                    _description:  (description != kPlaceholderDescription) ? description : "",
+                                    _imageURL: imageURL)
         
         commonVM.SaveRecord(objectId: objectId, modelData: modelData) { isCompleted in
             DispatchQueue.main.async {

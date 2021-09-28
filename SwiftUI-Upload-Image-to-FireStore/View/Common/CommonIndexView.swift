@@ -28,15 +28,14 @@ struct CommonIndexView: View {
         // MARK: - Start
         VStack(alignment: .trailing, spacing: 20){
             HStack {
-                Text("Common")
+                Text("Sample")
                     .modifier(TextBoldModifier(fontStyle: .header))
                 Spacer()
                 ButtonWithIconWithClipShapeCircleAction(systemName: "plus", action: {
                     isShowFormView = true
                 })
             }
-            
-            
+             
             
             // ---
             List{

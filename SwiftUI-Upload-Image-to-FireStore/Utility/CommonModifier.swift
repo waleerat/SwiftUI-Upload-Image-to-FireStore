@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct NavigationBarHiddenModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -40,7 +39,7 @@ struct TextInputModifier : ViewModifier {
     content
          .font(.system(size: getFontSize(fontStyle: .common) ,weight: .regular, design: .rounded))
         .foregroundColor(foregroundColor)
-        .padding()
+        .padding(7)
         .background(RoundedRectangle(cornerRadius: 4)
                         .strokeBorder(foregroundColor, lineWidth: 1))
     }

@@ -29,9 +29,8 @@ struct ShareFormPreviewView: View {
         VStack (spacing: 10){
             VStack {
                 // Note: - IMAGE PREVIEW
-                if keyboard.height == 0 {
+                if keyboard.height == 0 && !imagePicker.showImagePicker {
                     HStack {
-                        
                         if imagePicker.selectedImagePreview != nil{
                             Image(uiImage: imagePicker.selectedImagePreview)
                                 .resizable()
@@ -53,18 +52,18 @@ struct ShareFormPreviewView: View {
                  
                 
                 VStack(spacing: 15){
-                    // Note: - Preview Thai
-                    Text(title.isEmpty ? "Empty title" : title)
+                    Text(title.isEmpty ? "" : title)
                         .modifier(TextRegularModifier(fontStyle: .title))
                     
-                    Text(description.isEmpty ? "Empty description" : description)
+                    Text(description.isEmpty ? "" : description)
                         .modifier(TextRegularModifier(fontStyle: .title))
+                       
                 }
                 .padding()
                 
             }
             //:: VSTACK
-           // .padding()
+            
         }
         .onTapGesture {
           withAnimation() {
