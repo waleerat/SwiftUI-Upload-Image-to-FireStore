@@ -7,39 +7,6 @@
 
 import SwiftUI 
 
-struct ConfirmDeleteView : View {
-    @Environment(\.presentationMode) var presentationMode
-    @Binding var isConfirmDeleteAction: Bool
-    @Binding var isConfirmDelete: Bool
-    var body: some View {
-        ZStack{
-            BlankView(
-            backgroundColor: Color.gray,
-              backgroundOpacity: 0.7)
-              .onTapGesture {
-                withAnimation() {
-                    isConfirmDeleteAction.toggle()
-                }
-              }
-            
-            VStack(spacing: 25) {
-                Text("Are you sure?")
-                    .modifier(TextBoldModifier(fontStyle: .title))
-                
-                ButtonTextAction(buttonLabel: .constant("Confirm"), isActive: .constant(true), backgroundColor: Color.red) {
-                    isConfirmDeleteAction.toggle()
-                    isConfirmDelete = true
-                }
-                
-                ButtonTextAction(buttonLabel: .constant("Cancel"), isActive: .constant(true)) {
-                    isConfirmDeleteAction.toggle()
-                }
-            }
-            
-        }
-    }
-} 
-
 struct ThumbnailView: View {
     
     var photo: ImageAsset
@@ -67,53 +34,6 @@ struct ThumbnailView: View {
     }
 }
 
-
-struct microphoneRecordingView: View {
-    @Binding  var isRecording:Bool
-    
-    var body: some View {
-        ZStack{
-            Circle()
-                .fill(Color.red)
-                .frame(width: getIconSize() , height: getIconSize())
-            
-            Circle()
-                .stroke(!isRecording ? Color.orange : Color.gray.opacity(0.2), lineWidth: isIpad ? 10 : 6)
-                .frame(
-                    width: isIpad ? getIconSize() + 7 : getIconSize() + 5 ,
-                    height: isIpad ? getIconSize() + 7 : getIconSize() + 5
-                )
-            
-            Image(systemName: "mic.fill")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(.white)
-                .frame(
-                    width:  isIpad ? getIconSize() - 7 : getIconSize() - 4,
-                    height: isIpad ? getIconSize() - 7 : getIconSize() - 4
-                )
-        }
-    }
-}
-
-
-struct audioRemoveIconView: View {
-    @State var systemName: String = "xmark.bin.fill"
-    
-    var body: some View {
-        ZStack{
-            Circle()
-                .fill(Color.red)
-                .frame(width: isIpad ? 45 : 25, height: isIpad ? 45 : 25)
-            
-            Image(systemName: systemName)
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(Color.white)
-                .frame(width: isIpad ? 35 : 18, height: isIpad ? 35 : 18)
-        }
-    }
-}
 
 // Note: - Class to check if Keyboard appeared
 class KeyboardInfo: ObservableObject {

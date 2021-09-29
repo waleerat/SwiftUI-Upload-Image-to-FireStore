@@ -95,8 +95,6 @@ class FileStorage {
         
     }
     
-     
-    
     class func downloadImage(imageUrl: String, completion: @escaping (_ image: UIImage?) -> Void) {
                 
         let imageFileName = ((imageUrl.components(separatedBy: "_").last!).components(separatedBy: "?").first)!.components(separatedBy: ".").first!

@@ -115,6 +115,7 @@ struct CommonFormView: View {
             DispatchQueue.main.async {
                 commonVM.doUploadImage(objectId: objectId, selectedUIImage: imagePicker.selectedImagePreview)
             }
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 isReload = true
                 self.presentationMode.wrappedValue.dismiss()
